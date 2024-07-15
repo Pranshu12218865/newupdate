@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY NETFLIX</title>
+    <link rel="stylesheet" href="home_page.css"/>
+    <script src="kkt.js"></script>
+</head>
+<body>
+    <!-- navbar -->
+    <div class="nav">
+        <div class="nav_left">
+            <a href="index.html">
+                <img class="nav_logo" src="./image/images.png" alt=""></a>
+        </div>
+        <div class="nav_right">
+            <img src="./image/Netflix-avatar.png" class="nav_avtar" alt="">
+        </div>
+    </div>
+    <!-- banner -->
+     <header id="banner">
+        <div id="banner_contents">
+            <h1 id="banner_title"></h1>
+            <div id="banner_buttons">
+                <button id="banner_button">Play</button>
+                <button id="banner_button">My List</button>
+            </div>
+            <p id="banner_description"></p>
+        </div>
+        <div id="banner_fadeBottom"></div>
+     </header>
+     <div id="headrow">
+        <div class="row">
+            <h2 class="row_title"></h2>
+            <div class="row_posters"></div>
+        </div>
+     </div>
+     <script>
+        window.addEventListener("scroll",function(){
+            var nav=document.queryelector(".nav");
+            nav.classList.toggle("active",window.scrollY > 0); 
+        })
+     </script>
+</body>
+</html>
